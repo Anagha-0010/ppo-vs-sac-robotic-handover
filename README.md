@@ -81,7 +81,7 @@ Both agents were trained for 700,000 timesteps using identical state-spaces and 
 * **PPO (Stable):** Achieved monotonic convergence to a high mean reward (~463). Exhibited smooth, robust tracking behavior suitable for real-world deployment.
 * **SAC (Unstable):** Demonstrated early sample efficiency but suffered from severe "sawtooth" policy collapse (dropping to <200 reward). The maximum-entropy objective conflicted with the precision required for the handover, leading to catastrophic forgetting.
 
-`![Training Results](SAC vs PPO.png)`
+`[Training Results](SAC vs PPO.png)`
 
 ---
 
