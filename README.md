@@ -31,8 +31,7 @@ As collaborative robots enter human workspaces, the ability to adapt to unpredic
 1. Clone this repository into your ROS 2 workspace:
    ```bash
    mkdir -p ~/ws_ros/src && cd ~/ws_ros/src
-   git clone [https://github.com/](https://github.com/)[YourUsername]/ur5e-dynamic-handover-rl.git
-   ```
+   git clone "this project"
 2. Install Python dependencies:
    ```bash
    pip install stable-baselines3 torch numpy tensorboard PyKDL
@@ -82,8 +81,7 @@ Both agents were trained for 700,000 timesteps using identical state-spaces and 
 * **PPO (Stable):** Achieved monotonic convergence to a high mean reward (~463). Exhibited smooth, robust tracking behavior suitable for real-world deployment.
 * **SAC (Unstable):** Demonstrated early sample efficiency but suffered from severe "sawtooth" policy collapse (dropping to <200 reward). The maximum-entropy objective conflicted with the precision required for the handover, leading to catastrophic forgetting.
 
-*(Add a screenshot of your TensorBoard graph comparing PPO and SAC here! Name it `ppo_vs_sac.png` and place it in an `images` folder)*
-`![Training Results](images/ppo_vs_sac.png)`
+`![Training Results](SAC vs PPO.png)`
 
 ---
 
@@ -101,7 +99,3 @@ This project builds upon the shoulders of giants. We acknowledge the following o
 * [Universal Robots ROS 2 Description](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description) for the high-fidelity UR5e models.
 * Our course instructors for providing the foundational Docker and ROS 2 setup materials.
 ```
-
-### Next Steps for You:
-1. Replace `[YourUsername]` with your actual GitHub handle in the installation step.
-2. Take that combined TensorBoard screenshot (`image_7dcb5b.png`), save it as `ppo_vs_sac.png`, and upload it to an `images` folder in your repo so it shows up beautifully on the page!
